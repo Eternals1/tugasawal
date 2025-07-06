@@ -1,0 +1,283 @@
+
+body {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav { 
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0%;
+}
+
+.nav-selection { 
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.nav-selection a {
+    text-decoration: none;
+    color: white;
+}
+.nav-selection a:hover {
+    color: rgb(247, 19, 19);
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px; /* Memberi jarak konsisten antara kolom kiri dan kanan */
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
+}
+
+.welcome-content {
+    flex: 1; /* Membuat kedua kolom (kiri & kanan) memiliki lebar yang sama */
+}
+
+/* === LEFT COLUMN (TEXT) === */
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Meratakan teks ke kiri agar lebih rapi */
+    gap: 20px; /* Memberi jarak antar elemen di dalam kolom kiri */
+}
+
+.welcome-title {
+    font-size: 2.5em; /* Ukuran judul lebih besar dan menonjol */
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.welcome-description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* === BUTTON STYLING === */
+.cta-button {
+    background-color: #3498db; /* Warna biru yang lebih cerah dan modern */
+    color: white;
+    border: none; /* Menghilangkan border agar terlihat lebih flat dan modern */
+    border-radius: 50px; /* Radius lebih besar untuk bentuk pil */
+    padding: 15px 35px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); /* Bayangan lembut */
+}
+
+.cta-button:hover {
+    background-color: #2980b9; /* Warna sedikit lebih gelap saat disentuh mouse */
+    transform: translateY(-3px); /* Efek sedikit terangkat */
+}
+
+.cta-button:active {
+    background-color: #1f618d; /* Warna lebih gelap saat ditekan */
+    transform: translateY(0);
+}
+
+/* === RIGHT COLUMN (IMAGE) === */
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 350px; /* Batas lebar maksimum agar tidak terlalu besar */
+    height: auto; /* Menjaga aspek rasio gambar */
+    clip-path: circle(50% at 50% 50%); /* Lingkaran sempurna di tengah */
+    object-fit: cover; /* Memastikan gambar mengisi lingkaran tanpa distorsi */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan untuk memberi kedalaman */
+}
+
+
+/* ======================= ABOUT ME SECTION ======================= */
+.about-section {
+    padding: 80px 40px; /* Jarak atas-bawah dan kiri-kanan */
+    background-color: #ffffff; /* Warna latar belakang putih untuk kontras */
+}
+
+.section-header {
+    text-align: center; /* Meratakan semua teks di dalamnya ke tengah */
+    margin-bottom: 50px; /* Jarak antara header dan grid di bawahnya */
+}
+
+.section-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    max-width: 600px; /* Batas lebar agar mudah dibaca */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === GRID LAYOUT === */
+.about-grid {
+    display: grid;
+    /* Membuat 3 kolom dengan lebar yang sama */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Jarak antar item di dalam grid */
+    max-width: 1100px;
+    margin: 0 auto; /* Grid berada di tengah section */
+}
+
+/* === CARD ITEM STYLING === */
+.about-item {
+    background-color: #f8f9fa; /* Latar belakang kartu yang sedikit abu-abu */
+    border: 1px solid #e9ecef; /* Border tipis */
+    border-radius: 12px; /* Sudut yang lebih tumpul */
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+}
+
+.about-item:hover {
+    transform: translateY(-8px); /* Efek 'terangkat' saat disentuh mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.item-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #3498db; /* Warna ikon disamakan dengan tombol */
+    margin-bottom: 15px;
+}
+
+.item-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+}
+
+.item-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* === RESPONSIVE DESIGN FOR ABOUT SECTION === */
+@media (max-width: 992px) {
+    .about-grid {
+        /* Mengubah grid menjadi 2 kolom di layar tablet */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+    
+    .about-grid {
+        /* Mengubah grid menjadi 1 kolom di layar mobile */
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+}
+
+
+/* ======================= PORTFOLIO SECTION ======================= */
+.portfolio-section {
+    padding: 80px 40px;
+    background-color: #f4f7f9; /* Warna latar berbeda untuk memisahkan section */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sama lebar */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === CARD STYLING === */
+.portfolio-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Penting agar gambar tidak keluar dari sudut rounded */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px; /* Tinggi gambar yang konsisten untuk semua kartu */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+    display: block;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* === RESPONSIVE DESIGN FOR PORTFOLIO SECTION === */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+    }
+
+    .portfolio-section {
+        padding: 60px 20px;
+    }
+}

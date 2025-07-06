@@ -1,69 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Halaman Tanpa CSS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
+  
+  <header>
+    <nav>
+      <div class="brand_name">
+        <p>Aska</p>
+      </div>
 
-<!-- Section 1: Menu -->
-<table border="1" width="100%">
-  <tr>
-    <td><a href="#about">About Me</a></td>
-    <td><a href="#biodata">Biodata</a></td>
-    <td><a href="#portfolio">Portfolio</a></td>
-  </tr>
-</table>
+      <div class="nav-selection">
+        <a href="">Header</a>
+        <a href="">Biodata</a>
+        <a href="">Portofolio</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- Section 2: Judul Kiri dan Gambar Kanan -->
+   <main>
+        <section class="welcome-section">
+            <div class="welcome-content left">
+                <h1 class="welcome-title">Selamat Datang di Website Saya</h1>
+                <p class="welcome-description">Temukan berbagai informasi menarik dan proyek-proyek yang telah saya kerjakan. Mari kita mulai petualangan digital ini bersama.</p>
+                <button class="cta-button">Jelajahi Sekarang</button>
+            </div>
+            <div class="welcome-content right">
+                <img class="profile-image" src="assets/_MG_9201.JPG" alt="Foto profil pemilik website">
+            </div>
+        </section>
 
-<table border="1" width="100%">
-  <tr>
-    <td width="50%">
-      <h3>Halo, saya Aska!</h3>
-      <p>Saya seorang pengembang web dan pembuat konten digital yang antusias belajar hal baru.</p>
-    </td>
-    <td width="50%">
-      <img src="https://via.placeholder.com/250" alt="Foto Profil">
-    </td>
-  </tr>
-</table>
 
-<!-- Section 3: Biodata dengan 6 Box (3x2) -->
-<h2 id="biodata">Biodata</h2>
-<table border="1" width="100%">
-  <tr>
-    <td>Nama: Aska Skata</td>
-    <td>Umur: 22 Tahun</td>
-    <td>Asal: Medan</td>
-  </tr>
-  <tr>
-    <td>Pekerjaan: Mahasiswa</td>
-    <td>Hobi: Fotografi</td>
-    <td>Email: aska@example.com</td>
-  </tr>
-</table>
+        <section class="about-section">
+    <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+            Berikut adalah beberapa hal yang mendefinisikan siapa saya, baik secara profesional maupun personal.
+        </p>
+    </div>
 
-<!-- Section 4: Portofolio -->
-<h2 id="portfolio">Portofolio</h2>
-<table border="1" width="100%">
-  <tr>
-    <td>
-      <img src="https://via.placeholder.com/150" alt="Proyek 1"><br>
-      <strong>Proyek 1</strong><br>
-      Website e-commerce sederhana.
-    </td>
-    <td>
-      <img src="https://via.placeholder.com/150" alt="Proyek 2"><br>
-      <strong>Proyek 2</strong><br>
-      Aplikasi manajemen kelas berbasis web.
-    </td>
-    <td>
-      <img src="https://via.placeholder.com/150" alt="Proyek 3"><br>
-      <strong>Proyek 3</strong><br>
-      Video aftermovie event kampus.
-    </td>
-  </tr>
-</table>
+    <div class="about-grid">
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="item-title">Kreatif</h3>
+            <p class="item-description">Senang mencari solusi inovatif dan berpikir di luar kotak untuk mengatasi tantangan yang ada.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="item-title">Kolaboratif</h3>
+            <p class="item-description">Percaya bahwa hasil terbaik datang dari kerja sama tim yang solid dan komunikasi yang terbuka.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="item-title">Adaptif</h3>
+            <p class="item-description">Mampu beradaptasi dengan cepat terhadap perubahan teknologi dan lingkungan kerja yang dinamis.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.71.71a5.4 5.4 0 0 0 0 7.65l.71.71a5.4 5.4 0 0 0 7.65 0l-.71-.71a5.4 5.4 0 0 0 0-7.65l.71-.71z"></path><path d="M6.73 13.27l-4.24 4.24a2.12 2.12 0 0 0 0 3h0a2.12 2.12 0 0 0 3 0l4.24-4.24"></path></svg>
+            </div>
+            <h3 class="item-title">Problem Solver</h3>
+            <p class="item-description">Memiliki pendekatan analitis untuk memecahkan masalah secara efisien dan efektif.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3 class="item-title">Pembelajar Cepat</h3>
+            <p class="item-description">Selalu antusias untuk mempelajari hal-hal baru dan mengembangkan keterampilan diri.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <h3 class="item-title">Berorientasi Detail</h3>
+            <p class="item-description">Memberikan perhatian tinggi pada detail untuk memastikan kualitas dan akurasi pekerjaan.</p>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="section-header">
+        <h2 class="section-title">Portofolio</h2>
+        <p class="section-subtitle">Beberapa proyek pilihan yang pernah saya kerjakan.</p>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <img src="https://via.placeholder.com/400x300/3498db/ffffff?text=Proyek+Satu" alt="Gambar Proyek Satu" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Desain Website Perusahaan</h3>
+                <p class="card-description">Membangun website modern dan responsif untuk meningkatkan citra digital perusahaan.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=Proyek+Dua" alt="Gambar Proyek Dua" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Aplikasi Mobile E-Commerce</h3>
+                <p class="card-description">Mengembangkan aplikasi belanja online untuk platform iOS dan Android.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="https://via.placeholder.com/400x300/2ecc71/ffffff?text=Proyek+Tiga" alt="Gambar Proyek Tiga" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Sistem Manajemen Inventaris</h3>
+                <p class="card-description">Merancang dan mengimplementasikan sistem untuk melacak stok barang secara real-time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
 
 </body>
 </html>
